@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<h1>Products</h1>
+<br />
+<br />
+<div class="row">
+    @foreach (var pro in ViewBag.Prod)
+    {
+        <div class="col-md-4">
+            <img class="img-responsive" src="~/App_Start/image/@pro.Image" width="200" height="200" />
+            <p>@pro.Name</p>
+            <p>@pro.Discription</p>
+            <button class="btn btn-primary">Add To Cart</button>
+
+        </div>
+
+    }
+
+</div>
